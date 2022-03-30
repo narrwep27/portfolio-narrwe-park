@@ -1,0 +1,196 @@
+* {
+    font-family: Avenir, Hevlvetica, sans-serif;
+}
+body {
+    margin: 1em 3em 1em 23%;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+}
+
+/* aside bio */
+aside {
+    position: fixed;
+    width: 23%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-right: 2px solid lightgray;
+    padding-top: 2em;
+    overflow: scroll;
+}
+.intro-div {
+    margin: 0 auto;
+    width: 90%;
+}
+.intro-headshot-container {
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.intro-headshot {
+    width: 100%;
+    margin-top: -45px;
+}
+.intro-div h1 {
+    text-align: center;
+}
+.fa-ul li {
+    text-align: left;
+}
+.intro-description {
+    margin: 1em 1em 1.5em 1em;
+}
+.intro-divider {
+    border: 1px solid lightgray;
+    width: 60%;
+    margin: 0 auto;
+}
+.intro-contacts-header {
+    margin: 1.5em 1em .3em 1em;
+}
+.intro-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    padding: 0;
+    column-gap: 1.5em;
+}
+.fa-linkedin {
+    color: rgb(9, 102, 194);
+}
+.intro-contacts-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-right: 1.5em;
+    border-right: 1px solid black;
+}
+
+/* main content */
+main {
+    margin-left: 2em;
+}
+.project {
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 2.3em;
+}
+.details {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-template-rows: 5fr 2fr 1fr;
+    grid-template-areas: 
+        'screenshot paragraph'
+        'screenshot tech'
+        'links .';
+}
+.details-odd {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: 5fr 2fr 1fr;
+    grid-template-areas: 
+        'paragraph screenshot'
+        'tech screenshot'
+        '. links';
+}
+.screenshot {
+    max-width: 90%;
+    max-height: 90%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    grid-area: screenshot;
+    justify-self: center;
+}
+.details-paragraph {
+    grid-area: paragraph;
+}
+
+/* main content tech icons */
+.tech {
+    align-self: start;
+    grid-area: tech;
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+.tech-icon {
+    position: relative;
+    height: 3em;
+}
+.tech-icon-name-show,
+.tech-icon-name-hide {
+    position: absolute;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(211, 211, 211);
+    transition: 200ms;
+}
+.tech-icon-name-hide {
+    opacity: 0;
+    transition: 200ms;
+}
+.tech-icon-name-show p,
+.tech-icon-name-hide p {
+    margin: 0;
+    color: black;
+}
+.tech-icon-name-point {
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 80%;
+    border-left: .5em solid transparent;
+    border-right: .5em solid transparent;
+    border-bottom: 1em solid rgb(211, 211, 211);
+}
+.django,
+.postgresql,
+.express,
+.mongodb {
+    width: 2.5em;
+}
+.express {
+    margin-top: .7em;
+}
+
+/* main content links */
+.links {
+    justify-self: center;
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    grid-area: links;
+}
+.links-site {
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 350ms
+}
+.links-site:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+.links-github-text {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 3px;
+    transition: 350ms;
+}
+.links-github-text:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 3px;
+}
+.open-library-link {
+    text-decoration: underline;
+}
