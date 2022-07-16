@@ -1,0 +1,20 @@
+.sticky-header {
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    padding: 0.25em;
+    gap: 2em;
+}
+
+.sticky-header a {
+    margin-top: 2px;
+}
+
+.linkedin-icon {
+    color: #1466c2;
+}
+
+.github-icon {
+    color: black;
+}

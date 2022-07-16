@@ -1,13 +1,18 @@
 import React from 'react';
-import '../styles/Home.css';
+import '../styles/pages/Home.css';
+import Header from '../components/Header';
 
-const Home = () => {
+const Home = (): JSX.Element => {
     return (
         <div>
-            <header className="home-header">
-                <h1>Narrwe Park</h1>
-                <p>Full Stack Developer | Software Engineer | Educator</p>
-            </header>
+            <Header />
+            <div className="about">
+                <h2>About Narrwe</h2>
+            </div>
+            <div className="project">
+                <h2>Projects:</h2>
+            </div>
+            <footer></footer>
         </div>
     );
 };

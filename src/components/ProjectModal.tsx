@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProjectModal = () => {
+const ProjectModal = (): JSX.Element => {
     return (
         <div>
             <h1>Project Modal</h1>
