@@ -1,0 +1,28 @@
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 14px;
+    height: 55vh;
+}
+
+.about-content-text {
+    margin-top: 28px;
+    width: 55%;
+}
+.about-content-text p {
+    margin-left: 1em;
+}
+
+.about-content-img-container {
+    width: 25%;
+    min-height: 100%;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.about-content-img {
+    max-width: 150%;
+    min-height: 150%;
+    margin-top: -30%;
+    margin-left: -11%;
+}
