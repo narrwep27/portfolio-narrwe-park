@@ -1,21 +1,19 @@
 import React from 'react';
 import '../styles/components/Header.css';
-import headshot from '../images/headshot.jpg';
-import StickyHeader from './StickyHeader';
+import { imageUrls } from '../images';
 
 const Header = (): JSX.Element => {
     return (
         <div className="header">
-            <StickyHeader />
             <div className="header-text-container">
                 <h1>Narrwe Park</h1>
-                <p>Full Stack Developer | Software Engineer | Educator</p>
+                <p>Software Engineer | Full Stack Developer | Educator</p>
             </div>
             <div className="headshot-div">
                 <div className="headshot-img-container">
                     <img
                         className="headshot-img"
-                        src={headshot}
+                        src={imageUrls.headshot}
                         alt="headshot"
                     />
                 </div>
