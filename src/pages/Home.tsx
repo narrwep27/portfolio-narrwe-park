@@ -2,15 +2,14 @@ import React from 'react';
 import '../styles/pages/Home.css';
 import Header from '../components/Header';
 import About from '../components/About';
+import Project from '../components/Project';
 
 const Home = (): JSX.Element => {
     return (
         <div>
             <Header />
             <About />
-            <div className="project">
-                <h2>Projects:</h2>
-            </div>
+            <Project />
             <footer></footer>
         </div>
     );
