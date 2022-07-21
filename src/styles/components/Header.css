@@ -13,11 +13,12 @@
     width: 100%;
 }
 
-.header-text-container h1 {
+.header-text-container > h1 {
     margin-bottom: 0;
+    font-size: 50px;
 }
 
-.headshot-div {
+.header-headshot-div {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -27,7 +28,7 @@
     height: 300px;
 }
 
-.headshot-img-container {
+.header-headshot-img-container {
     position: absolute;
     aspect-ratio: 1 / 1;
     overflow: hidden;
@@ -35,18 +36,18 @@
     border-radius: 50%;
 }
 
-.headshot-img {
+.header-headshot-img {
     max-height: 370px;
     margin-top: -20%;
 }
 
-.headshot-div-top {
+.header-headshot-div-top {
     background-color: var(--bg-color);
     width: 100%;
     height: 50%;
 }
 
-.headshot-div-bottom {
+.header-headshot-div-bottom {
     background-color: white;
     width: 100%;
     height: 50%;
