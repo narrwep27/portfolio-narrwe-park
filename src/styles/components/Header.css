@@ -6,16 +6,16 @@
     align-items: center;
     justify-content: center;
     color: white;
+    background-color: var(--bg-color);
 }
 
 .header-text-container {
-    background-color: var(--bg-color);
     width: 100%;
 }
 
 .header-text-container > h1 {
     margin-bottom: 0;
-    font-size: 50px;
+    font-size: 3em;
 }
 
 .header-headshot-div {
@@ -25,7 +25,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 300px;
+    height: min(55vw, 38vh);
 }
 
 .header-headshot-img-container {
@@ -34,21 +34,18 @@
     overflow: hidden;
     border: 1px solid black;
     border-radius: 50%;
+    width: min(50vw, 20em);
 }
 
 .header-headshot-img {
-    max-height: 370px;
+    width: 100%;
     margin-top: -20%;
 }
 
-.header-headshot-div-top {
-    background-color: var(--bg-color);
-    width: 100%;
-    height: 50%;
-}
-
 .header-headshot-div-bottom {
+    position: absolute;
     background-color: white;
     width: 100%;
     height: 50%;
+    bottom: 0;
 }

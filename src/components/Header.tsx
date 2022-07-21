@@ -10,6 +10,7 @@ const Header = (): JSX.Element => {
                 <p>Software Engineer | Full Stack Developer | Educator</p>
             </div>
             <div className="header-headshot-div">
+                <div className="header-headshot-div-bottom"></div>
                 <div className="header-headshot-img-container">
                     <img
                         className="header-headshot-img"
@@ -17,8 +18,6 @@ const Header = (): JSX.Element => {
                         alt="headshot"
                     />
                 </div>
-                <div className="header-headshot-div-top"></div>
-                <div className="header-headshot-div-bottom"></div>
             </div>
         </div>
     );
