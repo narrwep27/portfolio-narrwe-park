@@ -1,0 +1,46 @@
+.project {
+    margin: 0 7em;
+}
+
+.project-view {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    border: 1px solid black;
+    height: 37em;
+    margin: 0 1em;
+}
+
+.project-view-selector {
+    border-right: 1px solid grey;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: 0;
+}
+
+.project-view-selector::-webkit-scrollbar {
+    display: none;
+}
+
+.project-view-selector > ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.project-view-selector > ul > div {
+    border-bottom: 1px solid grey;
+    width: 100%;
+    padding: 1em 1.5em;
+}
+
+.project-view-selector > ul > div:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+@media screen and (max-width: 1044px) {
+    .project {
+        margin: 0 3em;
+    }
+}

@@ -1,6 +1,6 @@
 import { imageUrls } from '../images';
 
-export type Project = {
+export type ProjectType = {
     name: string;
     description: string;
     imageUrl: string;
@@ -20,7 +20,7 @@ const {
     postgresql
 } = imageUrls;
 
-export const data: Project[] = [
+export const data: ProjectType[] = [
     {
         name: 'Cached',
         description:

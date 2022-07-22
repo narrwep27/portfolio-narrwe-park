@@ -30,27 +30,36 @@ const About = (): JSX.Element => {
                         </p>
                     </div>
                     <div className="about-content-text-links">
-                        <a
-                            href="https://www.linkedin.com/in/narrwe-park/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <SiLinkedin style={{ color: '#1466c2' }} /> LinkedIn
-                        </a>
-                        <a
-                            href="https://github.com/narrwep27"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <SiGithub /> GitHub
-                        </a>
-                        <a
-                            href="https://drive.google.com/file/d/1cRYHWz0e-ZnJszxNDYlvFpx8fXUfyyJq/view?usp=sharing"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <IoDocumentTextOutline /> Resumé
-                        </a>
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/in/narrwe-park/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <SiLinkedin style={{ color: '#1466c2' }} />{' '}
+                                    LinkedIn
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://github.com/narrwep27"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <SiGithub /> GitHub
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://drive.google.com/file/d/1cRYHWz0e-ZnJszxNDYlvFpx8fXUfyyJq/view?usp=sharing"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <IoDocumentTextOutline /> Resumé
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div className="about-content-img-container">
