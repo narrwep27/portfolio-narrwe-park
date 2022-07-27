@@ -2,6 +2,7 @@ import { imageUrls } from '../images';
 
 export type ProjectType = {
     name: string;
+    slug: string;
     description: string;
     imageUrl: string;
     technologies: string[];
@@ -23,6 +24,7 @@ const {
 export const data: ProjectType[] = [
     {
         name: 'Cached',
+        slug: 'cached',
         description:
             `I appreciate anything that's applicable and useful, so a budgetting app seemed fitting. ` +
             `Cached is an app that allows users to record their expenses and keep track of their spending. ` +
@@ -43,6 +45,7 @@ export const data: ProjectType[] = [
     },
     {
         name: 'anchr',
+        slug: 'anchr',
         description:
             `Anchr is an concentration app where users can set a timer to focus on a specified activity. ` +
             `The app also allows users to log their sessions to keep a record of the amount of time dedicated to certain tasks. ` +
@@ -55,6 +58,7 @@ export const data: ProjectType[] = [
     },
     {
         name: 'Book Keep',
+        slug: 'book-keep',
         description:
             `Books have been friendly companions to me since I was young, which is why I was inspired to create a book tracking app. ` +
             `Users are able to catalog books they want to read, are reading, or have read. ` +
@@ -69,6 +73,7 @@ export const data: ProjectType[] = [
     },
     {
         name: 'Minesweeper',
+        slug: 'minesweeper',
         description:
             `The framework of this project is extremely simple. Just bare bones HTML, CSS, and JavaScript. ` +
             `Although the environment of this project is simple, I'm very proud of it since it was my first independent coding project and required considerable logic for it to function correctly. ` +

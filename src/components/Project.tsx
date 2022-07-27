@@ -14,12 +14,20 @@ const Project = (): JSX.Element => {
             <div className="project-view">
                 <div className="project-view-selector">
                     <ul>
-                        {projects.map((project) => (
-                            <div onClick={() => setProject(project)}>
-                                <li>{project.name}</li>
+                        {projects.map((item) => (
+                            <div
+                                className={
+                                    project.slug === item.slug
+                                        ? 'project-view-selector-item-focus'
+                                        : 'project-view-selector-item'
+                                }
+                                onClick={() => setProject(item)}
+                            >
+                                <li>{item.name}</li>
                             </div>
                         ))}
                     </ul>
+                    <div className="project-view-selector-filler"></div>
                 </div>
                 <div className="project-view-detail">
                     <ProjectDetails project={project} />

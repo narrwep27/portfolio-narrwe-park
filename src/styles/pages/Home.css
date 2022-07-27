@@ -14,6 +14,16 @@ li {
     list-style: none;
 }
 
+footer {
+    background-color: #282c34;
+    color: white;
+    padding: 1em;
+}
+
+footer > h1 {
+    margin: 0;
+}
+
 @media screen and (max-width: 1044px) {
     .section {
         padding: 0 0 2em 0;
