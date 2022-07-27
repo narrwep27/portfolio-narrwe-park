@@ -10,7 +10,9 @@ const Home = (): JSX.Element => {
             <Header />
             <About />
             <Project />
-            <footer></footer>
+            <footer>
+                <h1>Footer</h1>
+            </footer>
         </div>
     );
 };
