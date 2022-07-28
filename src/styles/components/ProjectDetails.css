@@ -1,3 +1,86 @@
 .projectDetails {
+    display: grid;
     line-height: 1.3em;
+    height: 100%;
+    grid-template-columns: 37% 63%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'text image'
+        'tech image'
+        'links image';
+}
+
+.projectDetails-text {
+    grid-area: text;
+    align-self: end;
+}
+
+.projectDetails-tech {
+    grid-area: tech;
+    align-self: center;
+}
+
+.projectDetails-links {
+    grid-area: links;
+    align-self: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.projectDetails-links-projectSite,
+.projectDetails-links-githubSite {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.projectDetails-links-projectSite:visited,
+.projectDetails-links-githubSite:visited {
+    color: black;
+}
+
+.projectDetails-links-projectSite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.3em;
+    transition: 0.3s;
+}
+
+.projectDetails-links-projectSite:hover {
+    color: white;
+    background-color: black;
+}
+
+.projectDetails-links-githubSite {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4em;
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+    transition: 0.3s;
+}
+
+.projectDetails-links-githubSite:hover {
+    border-bottom: 2px solid navy;
+}
+
+.projectDetails-links-projectSite > p,
+.projectDetails-links-githubSite > p {
+    margin: 0;
+}
+
+.projectDetails-img {
+    grid-area: image;
+    max-width: 95%;
+    min-height: 75%;
+    justify-self: center;
+    align-self: center;
+    border: 1px solid lightgrey;
 }

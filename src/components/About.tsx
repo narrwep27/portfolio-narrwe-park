@@ -37,8 +37,11 @@ const About = (): JSX.Element => {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <SiLinkedin style={{ color: '#1466c2' }} />{' '}
-                                    LinkedIn
+                                    <SiLinkedin
+                                        style={{ color: '#1466c2' }}
+                                        size="1.1em"
+                                    />
+                                    <p>LinkedIn</p>
                                 </a>
                             </li>
                             <li>
@@ -47,7 +50,7 @@ const About = (): JSX.Element => {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <SiGithub /> GitHub
+                                    <SiGithub size="1.1em" /> <p>GitHub</p>
                                 </a>
                             </li>
                             <li>
@@ -56,7 +59,8 @@ const About = (): JSX.Element => {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <IoDocumentTextOutline /> Resumé
+                                    <IoDocumentTextOutline size="1.1em" />{' '}
+                                    <p>Resumé</p>
                                 </a>
                             </li>
                         </ul>

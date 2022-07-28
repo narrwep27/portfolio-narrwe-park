@@ -4,10 +4,9 @@
 
 .project-view {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 6fr;
     border: 1px solid black;
-    height: 37em;
-    margin: 0 1em;
+    height: 35em;
 }
 
 /* .project-view-selector {
