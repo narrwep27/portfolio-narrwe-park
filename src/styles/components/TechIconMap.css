@@ -1,0 +1,5 @@
+.techIcons {
+    display: flex;
+    gap: 0.7em;
+    font-size: 2em;
+}

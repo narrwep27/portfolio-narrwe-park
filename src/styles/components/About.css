@@ -33,14 +33,23 @@
 }
 
 .about-content-text-links > ul > li > a {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
     text-decoration: none;
     border-bottom: 2px solid white;
+    padding-bottom: 2px;
+    width: fit-content;
     color: black;
     transition: 0.2s;
 }
 
 .about-content-text-links > ul > li > a:hover {
     border-bottom: 2px solid navy;
+}
+
+.about-content-text-links > ul > li > a > p {
+    margin: 0;
 }
 
 .about-content-img-container {

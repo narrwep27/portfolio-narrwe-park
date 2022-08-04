@@ -1,0 +1,33 @@
+.techIcon-container {
+    position: relative;
+}
+
+.techIcon-label-hide,
+.techIcon-label-show {
+    position: absolute;
+    border-radius: 5px;
+    background-color: rgb(211, 211, 211);
+    font-size: 0.5em;
+    padding: 0.2em;
+    margin-top: 0.4em;
+    transition: 200ms;
+}
+
+.techIcon-label-hide {
+    opacity: 0;
+}
+
+.techIcon-label-hide > p,
+.techIcon-label-show > p {
+    margin: 0;
+}
+
+.techIcon-label-point {
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 85%;
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-bottom: 1em solid rgb(211, 211, 211);
+}

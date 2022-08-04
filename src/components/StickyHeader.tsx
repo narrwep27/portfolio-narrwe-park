@@ -1,6 +1,5 @@
-import React from 'react';
-import '../styles/components/StickyHeader.css';
 import { SiLinkedin, SiGithub } from 'react-icons/si';
+import '../styles/components/StickyHeader.css';
 
 const StickyHeader = (): JSX.Element => {
     return (
