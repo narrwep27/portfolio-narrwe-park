@@ -1,7 +1,7 @@
-import '../styles/components/ProjectDetails.css';
 import { ProjectType } from '../data/Projects';
 import { SiGithub } from 'react-icons/si';
-import TechIcons from './TechIcons';
+import TechIconMap from './TechIconMap';
+import '../styles/components/ProjectDetails.css';
 
 const ProjectDetails = ({ project }: { project: ProjectType }): JSX.Element => {
     return (
@@ -11,7 +11,7 @@ const ProjectDetails = ({ project }: { project: ProjectType }): JSX.Element => {
                 <p>{project.description}</p>
             </div>
             <div className="projectDetails-tech">
-                <TechIcons techArr={project.technologies} />
+                <TechIconMap techArr={project.technologies} />
             </div>
             <div className="projectDetails-links">
                 <a

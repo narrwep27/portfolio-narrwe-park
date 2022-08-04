@@ -1,6 +1,5 @@
-import React from 'react';
-import '../styles/components/Header.css';
 import { imageUrls } from '../images';
+import '../styles/components/Header.css';
 
 const Header = (): JSX.Element => {
     return (

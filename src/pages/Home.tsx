@@ -1,8 +1,7 @@
-import React from 'react';
-import '../styles/pages/Home.css';
 import Header from '../components/Header';
 import About from '../components/About';
 import Project from '../components/Project';
+import '../styles/pages/Home.css';
 
 const Home = (): JSX.Element => {
     return (

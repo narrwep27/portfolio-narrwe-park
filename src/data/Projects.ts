@@ -32,7 +32,7 @@ export const data: ProjectType[] = [
         name: 'Cached',
         slug: 'cached',
         description:
-            `I appreciate anything that's applicable and useful, so a budgetting app seemed fitting. ` +
+            `I appreciate anything that's applicable and useful, so a budgetting app fit those desires well. ` +
             `Cached is an app that allows users to record their expenses and keep track of their spending. ` +
             `I've primarily used React in my previous projects, but Vue was very fun to work with. ` +
             `I also had to teach myself Python to properly use Django in the back-end framework. `,

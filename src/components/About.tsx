@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/pages/Home.css';
-import '../styles/components/About.css';
 import { imageUrls } from '../images';
 import { SiLinkedin, SiGithub } from 'react-icons/si';
 import { IoDocumentTextOutline } from 'react-icons/io5';
+import '../styles/pages/Home.css';
+import '../styles/components/About.css';
 
 const About = (): JSX.Element => {
     return (
