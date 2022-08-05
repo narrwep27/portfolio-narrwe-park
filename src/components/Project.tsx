@@ -1,38 +1,15 @@
-import { useState } from 'react';
-import { data, ProjectType } from '../data/Projects';
-import ProjectDetails from './ProjectDetails';
+import { useMediaQuery } from 'react-responsive';
+import ProjectViewDestkop from './ProjectViewDesktop';
+import ProjectViewMobile from './ProjectViewMobile';
 import '../styles/components/Project.css';
 
-const projects = data;
-
 const Project = (): JSX.Element => {
-    const [project, setProject] = useState<ProjectType>(projects[0]);
+    const isSmallScreen = useMediaQuery({ maxWidth: 1100 });
 
     return (
         <div className="project section">
             <h2>Projects</h2>
-            <div className="project-view">
-                <div className="project-view-selector">
-                    <ul>
-                        {projects.map((item) => (
-                            <div
-                                className={
-                                    project.slug === item.slug
-                                        ? 'project-view-selector-item-focus'
-                                        : 'project-view-selector-item'
-                                }
-                                onClick={() => setProject(item)}
-                            >
-                                <li>{item.name}</li>
-                            </div>
-                        ))}
-                    </ul>
-                    <div className="project-view-selector-filler"></div>
-                </div>
-                <div className="project-view-detail">
-                    <ProjectDetails project={project} />
-                </div>
-            </div>
+            {isSmallScreen ? <ProjectViewMobile /> : <ProjectViewDestkop />}
         </div>
     );
 };
